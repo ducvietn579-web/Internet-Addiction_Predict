@@ -25,9 +25,9 @@ def classify_addiction(score):
     return "Nguy cơ thấp"
 
 try:
-    GD_model, GD_encoder = joblib.load('/content/GDmodel_enc.rpk')
-    rf_model, rf_encoder = joblib.load('/content/rfmodel_enc.rpk')
-    XG_model, XG_encoder = joblib.load('/content/XGmodel_enc.rpk')
+    GD_model, GD_encoder = joblib.load('GDmodel_enc.rpk')
+    rf_model, rf_encoder = joblib.load('rfmodel_enc.rpk')
+    XG_model, XG_encoder = joblib.load('XGmodel_enc.rpk')
 except FileNotFoundError:
     print("Error loading model files. Please ensure 'GDmodel_enc.rpk', 'rfmodel_enc.rpk', and 'XGmodel_enc.rpk' are in the correct path.")
     # You might want to exit or handle this error appropriately
