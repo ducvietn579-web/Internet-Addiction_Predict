@@ -15,6 +15,7 @@ import pandas as pd
 import joblib
 import category_encoders as ce
 import numpy as np
+import xgboost as xgb
 
 from flask import Flask
 app = Flask(__name__)
