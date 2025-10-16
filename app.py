@@ -33,7 +33,7 @@ try:
     GD_model, GD_encoder = joblib.load('GDmodel_enc.rpk')
     rf_model, rf_encoder = joblib.load('rfmodel_enc.rpk')
     model = xgb.XGBRegressor()
-    model.load_model("xgb_model.json")
+    model.load_model("XGmodel_enc.json")
 except FileNotFoundError:
     print("Error loading model files. Please ensure 'GDmodel_enc.rpk', 'rfmodel_enc.rpk', and 'XGmodel_enc.rpk' are in the correct path.")
     # You might want to exit or handle this error appropriately
