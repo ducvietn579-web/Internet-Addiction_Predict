@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # Load model
 model = xgb.XGBRegressor()
-model.load_model("xgb_model.json")
+model.load_model("XGmodel_enc.json")
 
 @app.route('/')
 def home():
