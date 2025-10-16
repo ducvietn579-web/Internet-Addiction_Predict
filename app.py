@@ -17,7 +17,7 @@ import category_encoders as ce
 import numpy as np
 
 from flask import Flask
-app = Flask(_name_)
+app = Flask(__name__)
 
 
 def classify_addiction(score):
